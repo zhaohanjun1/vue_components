@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" src="./js/vue.js"></script>
+  <script type="text/javascript">
+    //定义一个新的组件，名称为button-counter
+    Vue.component('button-counter',{
+      data() {
+        return {
+          count:0
+        }
+      },
+      template:'<button @click="count++">'
+    })
+  </script>
+</body>
+</html>
